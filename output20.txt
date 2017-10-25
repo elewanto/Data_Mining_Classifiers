@@ -1,0 +1,575 @@
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /home/7/lewantowicz.2/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+
+
+Number of sentences read:  3000
+Number of sentiment 1s  :  1500
+Number of sentiment 0s  :  1500 
+
+Number of unique words in matrix using manual parsing:      5383
+Number of unique words in matrix using NLTK Lemmatization:    4869
+Number of unique words in matrix using NLTK Porter Stemming:           4189
+Time to build three dictionaries from dataset:  8.230  seconds
+Decision Tree classifier: 
+tree built, levels:  5
+Time to build decision tree from unpruned dataset:  32.115  seconds
+Number tree nodes:  29
+Time to classify  600  tuples in tree with  6  levels:  0.01  seconds
+Time to classify per tuple:  0.0000115  seconds
+accuracy:  59.67
+infoValThresh:  0.20
+levels:  6
+BEST ACCURACY
+
+tree built, levels:  10
+Time to build decision tree from unpruned dataset:  60.014  seconds
+Number tree nodes:  83
+Time to classify  600  tuples in tree with  11  levels:  0.01  seconds
+Time to classify per tuple:  0.0000204  seconds
+accuracy:  64.83
+infoValThresh:  0.20
+levels:  11
+BEST ACCURACY
+
+tree built, levels:  15
+Time to build decision tree from unpruned dataset:  83.769  seconds
+Number tree nodes:  125
+Time to classify  600  tuples in tree with  16  levels:  0.02  seconds
+Time to classify per tuple:  0.0000280  seconds
+accuracy:  65.83
+infoValThresh:  0.20
+levels:  16
+BEST ACCURACY
+
+tree built, levels:  20
+Time to build decision tree from unpruned dataset:  104.095  seconds
+Number tree nodes:  137
+Time to classify  600  tuples in tree with  21  levels:  0.02  seconds
+Time to classify per tuple:  0.0000346  seconds
+accuracy:  69.17
+infoValThresh:  0.20
+levels:  21
+BEST ACCURACY
+
+Decision tree on TRAINING set before pruning using optimal tree depth and info gain node threshold:
+Number tree nodes:  137
+Time to classify  1800  tuples in tree with  21  levels:  0.06  seconds
+Time to classify per tuple:  0.0000  seconds
+accuracy:  74.28
+infoValThresh:  0.20
+
+Decision tree on test set before pruning using optimal tree depth and info gain node threshold:
+Number tree nodes:  137
+Time to classify  600  tuples in tree with  21  levels:  0.02  seconds
+Time to classify per tuple:  0.0000  seconds
+accuracy:  70.33
+infoValThresh:  0.20
+
+kNN predictor Validation Set results before pruning: 
+Current k:  1
+
+Time to classify  600  validation tuples:  11.68  seconds
+Time per tuple:  0.019
+Current Accuracy:  63.50
+Best accuracy with k =  1 ; NotCorrection:  True ; using raw words dictionary
+Accuracy:  63.50
+Best accuracy with k =  1 ; NotCorrection:  False ; using raw words dictionary
+Accuracy:  65.67
+
+Time to classify  600  validation tuples:  11.47  seconds
+Time per tuple:  0.02  seconds
+Best accuracy with k =  1 ; NotCorrection:  False ; using NLTK Stemmed words dictionary
+Accuracy:  68.17
+
+Current k:  3
+
+Time to classify  600  validation tuples:  19.23  seconds
+Time per tuple:  0.032
+Current Accuracy:  59.83
+
+Time to classify  600  validation tuples:  19.96  seconds
+Time per tuple:  0.03  seconds
+
+Current k:  5
+
+Time to classify  600  validation tuples:  27.55  seconds
+Time per tuple:  0.046
+Current Accuracy:  61.33
+
+Time to classify  600  validation tuples:  26.76  seconds
+Time per tuple:  0.04  seconds
+
+Current k:  7
+
+Time to classify  600  validation tuples:  34.48  seconds
+Time per tuple:  0.057
+Current Accuracy:  62.50
+
+Time to classify  600  validation tuples:  34.55  seconds
+Time per tuple:  0.06  seconds
+
+Current k:  9
+
+Time to classify  600  validation tuples:  43.14  seconds
+Time per tuple:  0.072
+Current Accuracy:  62.33
+
+Time to classify  600  validation tuples:  43.66  seconds
+Time per tuple:  0.07  seconds
+
+optimalWords Test: 
+Stem words optimal
+
+kNN predictor TRAINING Set results BEFORE pruning using validation set optimizations for K, notCorrection, and dictionary:
+optimal k:  1  : not-correction:  False
+
+Time to classify  1800  training tuples:  32.895117  seconds
+Time per training tuple:  0.02  seconds
+Correct predictions w/out NOT correction:  1219
+Wrong predictions w/out NOT correction:  581
+Accuracy:  67.72
+kNN predictor Test Set results BEFORE pruning using validation set optimizations for K, notCorrection, and dictionary:
+optimal k:  1  : not-correction:  False
+
+Time to classify  600  test tuples:  11.174482  seconds
+Time per test tuple:  0.02  seconds
+Correct predictions w/out NOT correction:  376
+Wrong predictions w/out NOT correction:  224
+Accuracy:  62.67
+Pruning singles: 
+Original word count:  5383
+Number of single-occurrence words deleted:  3143
+After delete word count:  2240
+
+Pruning singles: 
+Original word count:  4189
+Number of single-occurrence words deleted:  2237
+After delete word count:  1952
+
+Pruning singles: 
+Original word count:  4869
+Number of single-occurrence words deleted:  2733
+After delete word count:  2136
+
+Pruning high entropy: 
+Original word count:  2240
+Number high entropy words deleted:  388
+After delete word count:  1852
+
+Pruning high entropy: 
+Original word count:  1952
+Number high entropy words deleted:  326
+After delete word count:  1626
+
+Pruning high entropy: 
+Original word count:  2136
+Number high entropy words deleted:  379
+After delete word count:  1757
+
+High occurrence words, low selective words deleted: 
+Prune occurThreshold:  100
+Prune posNegThreshold:  0.4
+Number high occurrence words deleted:  46
+After delete word count:  1806
+
+High occurrence words, low selective words deleted: 
+Prune occurThreshold:  100
+Prune posNegThreshold:  0.4
+Number high occurrence words deleted:  46
+After delete word count:  1580
+
+High occurrence words, low selective words deleted: 
+Prune occurThreshold:  100
+Prune posNegThreshold:  0.4
+Number high occurrence words deleted:  46
+After delete word count:  1711
+
+Time to prune:  20.05  seconds
+Decision Tree classifier: 
+tree built, levels:  25
+Time to build decision tree from unpruned dataset:  37.481  seconds
+Number tree nodes:  318
+Time to classify  600  tuples in tree with  26  levels:  0.02  seconds
+Time to classify per tuple:  0.0000409  seconds
+accuracy:  70.00
+infoValThresh:  0.10
+levels:  26
+BEST ACCURACY
+
+tree built, levels:  25
+Time to build decision tree from unpruned dataset:  34.374  seconds
+Number tree nodes:  135
+Time to classify  600  tuples in tree with  26  levels:  0.02  seconds
+Time to classify per tuple:  0.0000386  seconds
+accuracy:  70.00
+infoValThresh:  0.30
+levels:  26
+
+tree built, levels:  25
+Time to build decision tree from unpruned dataset:  32.467  seconds
+Number tree nodes:  93
+Time to classify  600  tuples in tree with  26  levels:  0.02  seconds
+Time to classify per tuple:  0.0000364  seconds
+accuracy:  70.28
+infoValThresh:  0.50
+levels:  26
+BEST ACCURACY
+
+tree built, levels:  25
+Time to build decision tree from unpruned dataset:  31.770  seconds
+Number tree nodes:  51
+Time to classify  600  tuples in tree with  26  levels:  0.02  seconds
+Time to classify per tuple:  0.0000348  seconds
+accuracy:  70.46
+infoValThresh:  0.70
+levels:  26
+BEST ACCURACY
+
+tree built, levels:  30
+Time to build decision tree from unpruned dataset:  41.676  seconds
+Number tree nodes:  195
+Time to classify  600  tuples in tree with  31  levels:  0.03  seconds
+Time to classify per tuple:  0.0000463  seconds
+accuracy:  70.83
+infoValThresh:  0.10
+levels:  31
+BEST ACCURACY
+
+tree built, levels:  30
+Time to build decision tree from unpruned dataset:  40.818  seconds
+Number tree nodes:  149
+Time to classify  600  tuples in tree with  31  levels:  0.03  seconds
+Time to classify per tuple:  0.0000456  seconds
+accuracy:  70.83
+infoValThresh:  0.30
+levels:  31
+
+tree built, levels:  30
+Time to build decision tree from unpruned dataset:  37.948  seconds
+Number tree nodes:  107
+Time to classify  600  tuples in tree with  31  levels:  0.03  seconds
+Time to classify per tuple:  0.0000427  seconds
+accuracy:  71.11
+infoValThresh:  0.50
+levels:  31
+BEST ACCURACY
+
+tree built, levels:  30
+Time to build decision tree from unpruned dataset:  35.907  seconds
+Number tree nodes:  61
+Time to classify  600  tuples in tree with  31  levels:  0.03  seconds
+Time to classify per tuple:  0.0000430  seconds
+accuracy:  71.29
+infoValThresh:  0.70
+levels:  31
+BEST ACCURACY
+
+tree built, levels:  35
+Time to build decision tree from unpruned dataset:  45.508  seconds
+Number tree nodes:  213
+Time to classify  600  tuples in tree with  36  levels:  0.03  seconds
+Time to classify per tuple:  0.0000551  seconds
+accuracy:  72.17
+infoValThresh:  0.10
+levels:  36
+BEST ACCURACY
+
+tree built, levels:  35
+Time to build decision tree from unpruned dataset:  43.696  seconds
+Number tree nodes:  165
+Time to classify  600  tuples in tree with  36  levels:  0.03  seconds
+Time to classify per tuple:  0.0000573  seconds
+accuracy:  72.17
+infoValThresh:  0.30
+levels:  36
+
+tree built, levels:  35
+Time to build decision tree from unpruned dataset:  39.891  seconds
+Number tree nodes:  117
+Time to classify  600  tuples in tree with  36  levels:  0.03  seconds
+Time to classify per tuple:  0.0000479  seconds
+accuracy:  72.50
+infoValThresh:  0.50
+levels:  36
+BEST ACCURACY
+
+tree built, levels:  35
+Time to build decision tree from unpruned dataset:  38.537  seconds
+Number tree nodes:  71
+Time to classify  600  tuples in tree with  36  levels:  0.03  seconds
+Time to classify per tuple:  0.0000458  seconds
+accuracy:  72.71
+infoValThresh:  0.70
+levels:  36
+BEST ACCURACY
+
+tree built, levels:  40
+Time to build decision tree from unpruned dataset:  47.356  seconds
+Number tree nodes:  223
+Time to classify  600  tuples in tree with  41  levels:  0.03  seconds
+Time to classify per tuple:  0.0000559  seconds
+accuracy:  72.83
+infoValThresh:  0.10
+levels:  41
+BEST ACCURACY
+
+tree built, levels:  40
+Time to build decision tree from unpruned dataset:  44.941  seconds
+Number tree nodes:  175
+Time to classify  600  tuples in tree with  41  levels:  0.03  seconds
+Time to classify per tuple:  0.0000539  seconds
+accuracy:  72.83
+infoValThresh:  0.30
+levels:  41
+
+tree built, levels:  40
+Time to build decision tree from unpruned dataset:  43.099  seconds
+Number tree nodes:  127
+Time to classify  600  tuples in tree with  41  levels:  0.03  seconds
+Time to classify per tuple:  0.0000510  seconds
+accuracy:  73.17
+infoValThresh:  0.50
+levels:  41
+BEST ACCURACY
+
+tree built, levels:  40
+Time to build decision tree from unpruned dataset:  41.678  seconds
+Number tree nodes:  81
+Time to classify  600  tuples in tree with  41  levels:  0.03  seconds
+Time to classify per tuple:  0.0000494  seconds
+accuracy:  73.38
+infoValThresh:  0.70
+levels:  41
+BEST ACCURACY
+
+tree built, levels:  45
+Time to build decision tree from unpruned dataset:  50.203  seconds
+Number tree nodes:  257
+Time to classify  600  tuples in tree with  46  levels:  0.04  seconds
+Time to classify per tuple:  0.0000609  seconds
+accuracy:  75.00
+infoValThresh:  0.10
+levels:  46
+BEST ACCURACY
+
+tree built, levels:  45
+Time to build decision tree from unpruned dataset:  48.422  seconds
+Number tree nodes:  203
+Time to classify  600  tuples in tree with  46  levels:  0.03  seconds
+Time to classify per tuple:  0.0000583  seconds
+accuracy:  75.00
+infoValThresh:  0.30
+levels:  46
+
+tree built, levels:  45
+Time to build decision tree from unpruned dataset:  46.940  seconds
+Number tree nodes:  153
+Time to classify  600  tuples in tree with  46  levels:  0.03  seconds
+Time to classify per tuple:  0.0000564  seconds
+accuracy:  75.33
+infoValThresh:  0.50
+levels:  46
+BEST ACCURACY
+
+tree built, levels:  45
+Time to build decision tree from unpruned dataset:  45.237  seconds
+Number tree nodes:  103
+Time to classify  600  tuples in tree with  46  levels:  0.03  seconds
+Time to classify per tuple:  0.0000549  seconds
+accuracy:  75.54
+infoValThresh:  0.70
+levels:  46
+BEST ACCURACY
+
+tree built, levels:  50
+Time to build decision tree from unpruned dataset:  54.521  seconds
+Number tree nodes:  281
+Time to classify  600  tuples in tree with  51  levels:  0.04  seconds
+Time to classify per tuple:  0.0000649  seconds
+accuracy:  75.50
+infoValThresh:  0.10
+levels:  51
+
+tree built, levels:  50
+Time to build decision tree from unpruned dataset:  52.291  seconds
+Number tree nodes:  225
+Time to classify  600  tuples in tree with  51  levels:  0.04  seconds
+Time to classify per tuple:  0.0000626  seconds
+accuracy:  75.50
+infoValThresh:  0.30
+levels:  51
+
+tree built, levels:  50
+Time to build decision tree from unpruned dataset:  49.381  seconds
+Number tree nodes:  167
+Time to classify  600  tuples in tree with  51  levels:  0.04  seconds
+Time to classify per tuple:  0.0000600  seconds
+accuracy:  75.83
+infoValThresh:  0.50
+levels:  51
+BEST ACCURACY
+
+tree built, levels:  50
+Time to build decision tree from unpruned dataset:  48.354  seconds
+Number tree nodes:  113
+Time to classify  600  tuples in tree with  51  levels:  0.03  seconds
+Time to classify per tuple:  0.0000582  seconds
+accuracy:  76.04
+infoValThresh:  0.70
+levels:  51
+BEST ACCURACY
+
+tree built, levels:  55
+Time to build decision tree from unpruned dataset:  57.691  seconds
+Number tree nodes:  299
+Time to classify  600  tuples in tree with  56  levels:  0.04  seconds
+Time to classify per tuple:  0.0000693  seconds
+accuracy:  76.50
+infoValThresh:  0.10
+levels:  56
+BEST ACCURACY
+
+tree built, levels:  55
+Time to build decision tree from unpruned dataset:  55.907  seconds
+Number tree nodes:  243
+Time to classify  600  tuples in tree with  56  levels:  0.04  seconds
+Time to classify per tuple:  0.0000669  seconds
+accuracy:  76.50
+infoValThresh:  0.30
+levels:  56
+
+tree built, levels:  55
+Time to build decision tree from unpruned dataset:  53.326  seconds
+Number tree nodes:  183
+Time to classify  600  tuples in tree with  56  levels:  0.04  seconds
+Time to classify per tuple:  0.0000645  seconds
+accuracy:  76.83
+infoValThresh:  0.50
+levels:  56
+BEST ACCURACY
+
+tree built, levels:  55
+Time to build decision tree from unpruned dataset:  53.230  seconds
+Number tree nodes:  125
+Time to classify  600  tuples in tree with  56  levels:  0.04  seconds
+Time to classify per tuple:  0.0000644  seconds
+accuracy:  77.04
+infoValThresh:  0.70
+levels:  56
+BEST ACCURACY
+
+tree built, levels:  60
+Time to build decision tree from unpruned dataset:  60.745  seconds
+Number tree nodes:  315
+Time to classify  600  tuples in tree with  61  levels:  0.05  seconds
+Time to classify per tuple:  0.0000807  seconds
+accuracy:  76.67
+infoValThresh:  0.10
+levels:  61
+
+tree built, levels:  60
+Time to build decision tree from unpruned dataset:  58.794  seconds
+Number tree nodes:  259
+Time to classify  600  tuples in tree with  61  levels:  0.05  seconds
+Time to classify per tuple:  0.0000757  seconds
+accuracy:  76.67
+infoValThresh:  0.30
+levels:  61
+
+tree built, levels:  60
+Time to build decision tree from unpruned dataset:  57.730  seconds
+Number tree nodes:  199
+Time to classify  600  tuples in tree with  61  levels:  0.04  seconds
+Time to classify per tuple:  0.0000706  seconds
+accuracy:  77.00
+infoValThresh:  0.50
+levels:  61
+
+tree built, levels:  60
+Time to build decision tree from unpruned dataset:  57.137  seconds
+Number tree nodes:  135
+Time to classify  600  tuples in tree with  61  levels:  0.04  seconds
+Time to classify per tuple:  0.0000670  seconds
+accuracy:  77.21
+infoValThresh:  0.70
+levels:  61
+BEST ACCURACY
+
+Decision tree classifier on TRAINING set after pruning using optimal tree depth and info gain node threshold:
+Number tree nodes:  135
+Time to classify  1800  tuples in tree with  61  levels:  0.12  seconds
+Time to classify per tuple:  0.0001  seconds
+accuracy:  80.83
+infoValThresh:  0.70
+Decision tree classifier on test set after pruning using optimal tree depth and info gain node threshold:
+Number tree nodes:  135
+Time to classify  600  tuples in tree with  61  levels:  0.04  seconds
+Time to classify per tuple:  0.0001  seconds
+accuracy:  76.67
+infoValThresh:  0.70
+kNN predictor Validation Set results after pruning: 
+Current k:  1
+
+Best accuracy with k =  1 ; NotCorrection:  True ; using raw words dictionary
+Accuracy:  68.00
+Best accuracy with k =  1 ; NotCorrection:  False ; using raw words dictionary
+Accuracy:  72.33
+Time to classify  600  validation tuples:  2.36673498154
+Time per tuple:  0.0039  seconds
+
+Best accuracy with k =  1 ; NotCorrection:  False ; using NLTK Stemmed words dictionary
+Accuracy:  74.00
+
+Current k:  3
+
+Time to classify  600  validation tuples:  2.91512584686
+Time per tuple:  0.0049  seconds
+
+Best accuracy with k =  3 ; NotCorrection:  False ; using NLTK Stemmed words dictionary
+Accuracy:  75.33
+
+Current k:  5
+
+Time to classify  600  validation tuples:  3.94442510605
+Time per tuple:  0.0066  seconds
+
+Best accuracy with k =  5 ; NotCorrection:  False ; using NLTK Stemmed words dictionary
+Accuracy:  75.67
+
+Current k:  7
+
+Best accuracy with k =  7 ; NotCorrection:  False ; using raw words dictionary
+Accuracy:  76.00
+Time to classify  600  validation tuples:  4.37689995766
+Time per tuple:  0.0073  seconds
+
+
+Current k:  9
+
+Best accuracy with k =  9 ; NotCorrection:  False ; using raw words dictionary
+Accuracy:  78.00
+Time to classify  600  validation tuples:  5.07539701462
+Time per tuple:  0.0085  seconds
+
+
+Best accuracy with k =  9 ; NotCorrection:  False ; using NLTK Lemmatized words dictionary
+Accuracy:  78.17
+optimalWords Test: 
+Lemma words optimal
+
+Time to classify  1800  training tuples:  15.24  seconds
+Time per tuple:  0.0085  seconds
+kNN predictor TRAINING Set results AFTER pruning using validation set optimizations for K, notCorrection, and dictionary:
+optimal k:  9  : not-correction:  False
+Correct predictions w/out NOT correction:  1379
+Wrong predictions w/out NOT correction:  421
+Accuracy:  76.61
+
+Time to classify  600  test tuples:  5.27  seconds
+Time per tuple:  0.0088  seconds
+kNN predictor Test Set results AFTER pruning using validation set optimizations for K, notCorrection, and dictionary:
+optimal k:  9  : not-correction:  False
+Correct predictions w/out NOT correction:  448
+Wrong predictions w/out NOT correction:  152
+Accuracy:  74.67
